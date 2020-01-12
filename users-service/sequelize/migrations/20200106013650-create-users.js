@@ -1,6 +1,7 @@
 module.exports.up = (queryInterface, DataTypes) => {
   return queryInterface.createTable(
-    "users", {
+    "users",
+    {
       id: {
         allowNull: false,
         primaryKey: true,
@@ -27,7 +28,8 @@ module.exports.up = (queryInterface, DataTypes) => {
         allowNull: true,
         type: DataTypes.DATE
       }
-    }, {
+    },
+    {
       charset: "utf8"
     }
   );
